@@ -6,7 +6,7 @@
 #    By: mminkjan <mminkjan@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/03/04 17:40:52 by mminkjan       #+#    #+#                 #
-#    Updated: 2020/03/02 13:44:53 by jesmith       ########   odam.nl          #
+#    Updated: 2020/03/02 13:55:16 by jesmith       ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ HEADERS = includes/fillit.h
 
 FLAGS = -Wall -Wextra -Werror
 
-ADD_FILES = Makefile author 
+ADD_FILES = Makefile author ./tests
 
 all: $(NAME)
 
