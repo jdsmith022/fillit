@@ -1,100 +1,59 @@
 # fillit
-Codam Coding College
+
+![gif](https://github.com/jdsmith022/fillit/blob/master/pictures/gif.gif)
+
+### Codam Coding College project filllit
 Cohort January 2019
 
-fillit is the fourth project completed at Codam. The purpose of fillit is to familiarize myself with a recurring problematic in programming: searching for the optimal solution among a huge set of possibilities in a respectable amount of time. In this project, my objective was to find a way to a given Tetriminos set in the smallest possible square and each tetrimino is placed on their most upper-left position.
+fillit is the fourth project completed at Codam. The purpose of fillit is to become familiarize  with a recurring problematic in programming: searching for the optimal solution among a huge set of possibilities in a respectable amount of time. In this project, the objective was to find a way to a given Tetriminos set in the smallest possible square and each tetrimino is placed on their most upper-left position.
 
-I wrote a program that creates an executable called fillit. fillit takes only one parameter: a file that contains a list of 1 - 26 tetriminos to assemble. The file has a very specific format: every tetrimino must exactly fit in a 4 by 4 chars square and all tetriminos are separated by a newline. 
+For a full explaination of the project in pdf form, including rules and examples of correct solutions, please click [here](https://github.com/jdsmith022/fillit/blob/master/fillit.en.pdf).
 
-A description of a tetrimino is as follows:
-  1. Precisly 4 lines of 4 characters, each followed by a newline.
-  2. A tetrimino is a classic piece of Tetris composed of 4 blocks.
-  3. Each character mus either be a block character (#) or an empty character (.).
-  4. Each black of a Tetrimino must touch at least one other block on any of it's 4 sides (up, down, left, and right).
-  
+### Prerequities
+This program complies with a Makefile. For Windows, user can download Cygwin [here](http://www.cygwin.com/) for functionality similar to Linus for Windows.
 
-Example file:
+### Installation
 
-....
-....
-....
-####
+From terminal, the program can be install with git clone with the project repository, followed by the name of the directory you wish to download the repository to.
 
-...#
-..##
-...#
-....
+#### Example 
+```
+$ git clone git@github.com:jdsmith022/fillit.git [directory-name]
+```
+### Usage
 
+In terminal, go into the project directory. This program uses a makefile to compile. To compile, run:
+```
+$ make
+```
 
-If the file submitted does not follow the specific format, or contains an invalid tetrimino, then the program will return invalid.
+The executable name is fillit. A directory in the repository named test files that can be used to test the program. To see names of files available for use is maps directory of repository, from terminal and in git repository:
+```
+$ ls -la tests/
+```
+![ls-la display](https://github.com/jdsmith022/fillit/blob/master/pictures/ls-la.png)
 
-Example of an errror message is return: 
+However, a tetreminos file from the local computer can be used as long as the path to the file is given as parameter.
+```
+$ ./fillit [path-to-file]
+```
 
-$> cat invalid_sample.txt | cat -e
-....$
-####$
-....$
-...%$
-$
+#### Example:
+```
+$ ./fillit ./tests/test_1
+```
 
-or:
+If incorrect parameters are given or the test is invalid, an error message will be given.
 
-$> cat invalid_sample.txt | cat -e
-....$
-.#..$
-.#..$
-.##.$
-....$
-$
-....$
-....$
-..#.$
-.###$
-$
+To delete all object files from directory, run:
+```
+$ make clean
+```
+To delete executable from directory, run:
+```
+$ make fclean
+```
 
-Fillit displays the smallest asembled square on the standard output. To identify each Tetriminos in the square solution, I assinged a capital letter to each Tetrimino, starting with A and increasing with each new Tetrimino. If the file contains at least one error, the program displays error on the standard output followed by a new line.
-
-Example of valid Tetriminos file and correct output:
-
-$> cat valid_sample.txt | cat -e
-....$
-##..$
-.#..$
-.#..$
-$
-....$
-####$
-....$
-....$
-$
-#...$
-###.$
-....$
-....$
-$
-....$
-##..$
-.##.$
-....$
-
-$> ./fillit sample.txt | cat -e
-DDAA$
-CDDA$
-CCCA$
-BBBB$
-
-If no paramater is used with executable, a usage error will be returned.
-
-The programe is compiled with a Makefile. Makefile rules are as follows:
-make = creates executable
-make re = re makes executable after being made
-make clean = removes all .o files
-make fclean = removes all .o files and the executable
-
-To use programe, copy URL repositoy and safe files to directory on local computer. In terminal, go to newly created directory and run make to compile executable fillit. Create Tetriminos files and in the terminal, run the exectuable with your Tetriminos file as it's paramater. 
-
-Example:
-
-$> ./fillit valid_sample.txt
-
-Enjoy!
+### Collaborator
+This project was a group effort with:
+[Malou](https://github.com/mminkjan)
