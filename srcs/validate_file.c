@@ -6,11 +6,11 @@
 /*   By: mminkjan <mminkjan@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/04 19:31:20 by mminkjan       #+#    #+#                */
-/*   Updated: 2019/04/15 18:22:24 by mminkjan      ########   odam.nl         */
+/*   Updated: 2020/03/02 13:42:36 by jesmith       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 static int		ft_check_connections(t_tet *tet, size_t connect_count)
 {

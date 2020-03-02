@@ -6,11 +6,11 @@
 /*   By: jesmith <jesmith@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/04 16:47:39 by mminkjan       #+#    #+#                */
-/*   Updated: 2019/04/09 18:23:11 by jesmith       ########   odam.nl         */
+/*   Updated: 2020/03/02 13:42:36 by jesmith       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 static void		ft_print_grid(t_grid play)
 {

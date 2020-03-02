@@ -6,11 +6,11 @@
 /*   By: mminkjan <mminkjan@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/11 17:11:56 by jesmith        #+#    #+#                */
-/*   Updated: 2019/04/09 18:42:41 by mminkjan      ########   odam.nl         */
+/*   Updated: 2020/03/02 13:42:36 by jesmith       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 static t_grid		remove_edit(t_tet **minos, t_grid play)
 {

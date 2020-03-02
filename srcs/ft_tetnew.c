@@ -6,11 +6,11 @@
 /*   By: mminkjan <mminkjan@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/04/08 16:44:47 by mminkjan       #+#    #+#                */
-/*   Updated: 2019/04/09 10:58:40 by mminkjan      ########   odam.nl         */
+/*   Updated: 2020/03/02 13:42:36 by jesmith       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 void	ft_tetback(t_tet **alst, t_tet *blst)
 {

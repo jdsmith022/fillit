@@ -6,13 +6,13 @@
 /*   By: mminkjan <mminkjan@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/04 16:53:23 by mminkjan       #+#    #+#                */
-/*   Updated: 2019/04/09 17:30:13 by mminkjan      ########   odam.nl         */
+/*   Updated: 2020/03/02 13:43:28 by jesmith       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLIT_H
 # define FILLIT_H
-# include "libft/libft.h"
+# include "../libft/libft.h"
 # include <fcntl.h>
 
 typedef	struct		s_tet

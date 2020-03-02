@@ -6,11 +6,11 @@
 /*   By: mminkjan <mminkjan@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/22 18:28:34 by mminkjan       #+#    #+#                */
-/*   Updated: 2019/04/09 18:24:42 by mminkjan      ########   odam.nl         */
+/*   Updated: 2020/03/02 13:42:36 by jesmith       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../includes/fillit.h"
 
 static t_grid	ft_remove_letter(t_tet **minos, t_grid play)
 {
