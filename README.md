@@ -10,7 +10,7 @@ fillit is the fourth project completed at Codam. The purpose of fillit is to bec
 For a full explaination of the project in pdf form, including rules and examples of correct solutions, please click [here](https://github.com/jdsmith022/fillit/blob/master/fillit.en.pdf).
 
 ### Prerequities
-This program complies with a Makefile. For Windows, user can download Cygwin [here](http://www.cygwin.com/) for functionality similar to Linus for Windows.
+This program was written on LinuxOS and complies with a Makefile.
 
 ### Installation
 
